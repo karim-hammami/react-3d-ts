@@ -1,18 +1,19 @@
-import { Canvas } from "@react-three/fiber";
-import "./style.css"
+import { Canvas } from '@react-three/fiber'
+import './style.css'
 
 function Box() {
-    return (
+  return (
     <mesh>
-       <boxBufferGeometry attach="geometry" />
-       <meshLambertMaterial attach="material" color="hotpink" />
+      <boxBufferGeometry attach='geometry' />
+      <meshLambertMaterial attach='material' color='hotpink' />
     </mesh>
-    )        
+  )
 }
 
-
 export default function App() {
-    return <Canvas>
-        <Box />
+  return (
+    <Canvas>
+      <Box />
     </Canvas>
+  )
 }
